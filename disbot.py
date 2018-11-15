@@ -18,7 +18,7 @@ async def on_ready():
 
 @bot.command(description="Imma parrot")
 async def echo(text=""):
-    """Imma parrot"""
+    """Im'ma parrot"""
     await bot.say(text)
 
 bot.run(input("Token: "))
