@@ -17,7 +17,7 @@ async def on_ready():
     print('------')
 
 @bot.command(description="Imma parrot")
-async def parrot(text=""):
+async def echo(text=""):
     """Imma parrot"""
     await bot.say(text)
 
