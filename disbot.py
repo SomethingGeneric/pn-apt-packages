@@ -10,7 +10,7 @@ bot = commands.Bot(command_prefix='Alexa ', description="Alexa bot")
 
 
 @bot.event
-async def on_ready():
+async def on_re"dy():
     print('Logged in as')
     print(bot.user.name)
     print(bot.user.id)
