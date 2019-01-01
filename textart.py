@@ -8,6 +8,7 @@ if not os.path.exists("textart-reqs-installed"):
 
 import art
 from colorama import *
+init()
 
 if len(sys.argv) == 3:
     color = str(sys.argv[1])
