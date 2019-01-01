@@ -37,4 +37,4 @@ else:
     print("Not a color. Using default.")
     use = Fore.RESET
 
-print(use + text)
+print(use + art.text2art(text))
