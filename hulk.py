@@ -1,3 +1,5 @@
+# Origional hulk modified to launch from PyNix.
+
 import requests               # Because it's faster and more powerful than urllib2
 import sys
 import threading
@@ -6,6 +8,9 @@ import re
 import time                   # For time.sleep
 import multiprocessing
 import ctypes
+import subprocess
+
+subprocess.call([sys.executeable,"-m","pip","install","requests"])
 
 from multiprocessing import Pool
 
@@ -20,8 +25,8 @@ def buildblock(size):
 # User Instructions
 def usage():
     print('---------------------------------------------------')
-    print('USAGE: python hulk.py <url>')
-    print('Example: python hulk.py https://abcxyz123.com')
+    print('USAGE: hulk <url>')
+    print('Example: hulk https://abcxyz123.com')
     print('---------------------------------------------------')
 
 def init(ctr,sts,fg,flt):
