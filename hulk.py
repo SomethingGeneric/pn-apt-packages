@@ -10,7 +10,7 @@ import multiprocessing
 import ctypes
 import subprocess
 
-subprocess.call([sys.executeable,"-m","pip","install","requests"])
+subprocess.call([sys.executable,"-m","pip","install","requests"])
 
 from multiprocessing import Pool
 

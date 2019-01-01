@@ -1,7 +1,7 @@
 import os,subprocess,sys
 
 if not os.path.exists("textart-reqs-installed"):
-    subprocess.call([sys.executeable,"-m","pip","install","art","colorama"])
+    subprocess.call([sys.executable,"-m","pip","install","art","colorama"])
     f = open("textart-reqs-installed",'w')
     f.write(".")
     f.close()
