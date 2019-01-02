@@ -10,7 +10,7 @@ import multiprocessing
 import ctypes
 import subprocess
 
-subprocess.call([sys.executable,"-m","pip","install","requests"])
+subprocess.call([sys.executable,"-m","pip","install","ndg-httpsclient>=0.4.2","pyasn1>=0.2.3","pyOpenSSL>=17.0.0","urllib3>=1.21.1","requests>=2.14.2"])
 
 from multiprocessing import Pool
 
