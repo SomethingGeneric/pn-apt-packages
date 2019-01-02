@@ -6,4 +6,4 @@ else:
     print("Usage: pyrepl \"<code>\"")
     quit()
 
-os.system(sys.executable + "-m " + term)
+os.system(sys.executable + " -m " + term)
