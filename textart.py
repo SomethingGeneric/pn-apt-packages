@@ -1,13 +1,14 @@
-import os,subprocess,sys
+import os, subprocess, sys
 
 if not os.path.exists("textart-reqs-installed"):
-    subprocess.call([sys.executable,"-m","pip","install","art","colorama"])
-    f = open("textart-reqs-installed",'w')
+    subprocess.call([sys.executable, "-m", "pip", "install", "art", "colorama"])
+    f = open("textart-reqs-installed", "w")
     f.write(".")
     f.close()
 
 import art
 from colorama import *
+
 init()
 
 if len(sys.argv) == 3:

@@ -1,4 +1,4 @@
-import os,subprocess,sys
+import os, subprocess, sys
 
 if len(sys.argv) == 2:
     command = str(sys.argv[1])
